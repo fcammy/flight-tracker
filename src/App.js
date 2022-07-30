@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Departure from "./components/Departure";
+import armoirie from "./armoirie.png";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App container mt-3">
+      <h2 className="display-5">
+        <img src={armoirie} alt="armoirie" className="armoirie" />
+        Ahmed Sekou Toure Airport Departure & Arrival
+      </h2>
+      <Departure />
     </div>
   );
 }
